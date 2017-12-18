@@ -18,6 +18,19 @@ p {
 	</style>
 </head>
 <body>
+<script type="text/javascript">
+		var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+
+		var i = 1;
+
+		window.setInterval(function(){
+			document.body.style.backgroundColor = colors[i];
+			i++;
+			if (i === colors.length){
+				i=0;
+			}
+		}, 5000);
+	</script>
 
   <h1 style="color:orange;">Cool Cat</h1>
   <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/191163232/?autostart=false" frameborder="0" allowfullscreen></iframe>
